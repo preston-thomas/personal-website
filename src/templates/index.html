@@ -2,7 +2,13 @@
 
 {% block content %}
     <h1>Welcome to my personal website!</h1>
-    <p>As a Data Engineer Intern at Mutually Human, I contribute to developing scalable ETL pipelines using Azure Data Factory and Databricks while supporting production reporting workflows with SQL, Python/PySpark, and Java.</p>  
-    <p>Currently pursuing a Bachelor of Science in Mathematics and Computer Science at Grand Valley State University, I focus on honing technical and analytical skills. My academic background, combined with practical experience, drives my interest in leveraging data-driven solutions to empower organizations with actionable insights.</p>
-    <p>Check out my latest NFL data pipelines in the projects section!</p>
+    <br>
+
+    <img src="{{ url_for('static', filename='headshot.jpeg') }}" 
+         alt="Preston Thomas" 
+         style="width: 500px; border-radius: 0%;">
+
+    <p>As a Data Engineer Intern at Mutually Human, I contribute to developing scalable ETL pipelines for over 20 clients across various industries using Azure Data Factory and Databricks while supporting production reporting workflows with SQL, Python/PySpark, and Java.</p>  
+    <p>Currently pursuing a Bachelor of Science in Mathematics and Computer Science at Grand Valley State University, I focus on honing technical and analytical skills. My academic background, combined with practical experience, drives my interest in leveraging data-driven solutions.</p>
+    <p>In my free time, I am the biggest Detroit sports fan out there and love the NFL. I also love spending time at the gym and outdoors—when the Michigan weather allows it!</p>
 {% endblock %}

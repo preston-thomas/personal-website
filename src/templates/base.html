@@ -2,8 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preston's Site</title>
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --highlight: #4682B4;
+            --text-main: #2c3e50;
+            --muted: #7f8c8d;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            max-width: 95%;
+            margin: 20px auto;
+        }
+
+        h1, h2, h3 {
+            transition: color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+
+        h1:hover, h2:hover, h3:hover {
+            color: var(--highlight);
+            transform: translateY(-2px);
+        }
+
+        nav a {
+            transition: all 0.2s ease;
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--text-main);
+            padding: 2px 250px;
+        }
+
+        nav a:hover {
+            color: var(--highlight) !important;
+            background-color: rgba(70, 130, 180, 0.05);
+            border-radius: 10px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        main {
+            animation: fadeIn 1s ease-in;
+            max-width: 1400px;
+            width: 100%
+        }
+
+        footer {
+            margin-top: 4rem;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        
+        code, pre {
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -12,11 +76,11 @@
         <a href="/resume">Resume</a>
     </nav>
     <hr>
-    
-    {% block content %}{% endblock %}
-
+    <main>
+        {% block content %}{% endblock %}
+    </main>
     <footer>
-        <p>Preston Thomas</p>
+        <p>© 2026 Preston Thomas</p>
     </footer>
 </body>
 </html>
