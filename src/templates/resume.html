@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>My Professional Resume</h2>
-<p>If the PDF doesn't load, you can <a href="{{ url_for('static', filename='resume.pdf') }}">download it here</a>.</p>
-
-<embed 
-    src="{{ url_for('static', filename='resume.pdf') }}" 
-    type="application/pdf" 
-    width="100%" 
-    height="800px" 
-/>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <div class="resume-container">
+                <iframe src="{{ url_for('static', filename='resume.pdf') }}" width="100%" height="800px" style="border: none;"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

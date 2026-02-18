@@ -1,0 +1,83 @@
+/* Custom Styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.hero-section {
+    padding: 100px 0;
+    text-align: center;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero-section .lead {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.about-section, .passions-section, .skills-section, .experience-section, .certifications-section {
+    padding: 60px 0;
+}
+
+.img-fluid.rounded-circle {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.img-fluid.rounded-circle:hover {
+    transform: scale(1.05);
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+.btn-dark img, .btn-primary img {
+    filter: invert(1);
+}
+
+.skills-section ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.skills-section li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skills-section li img {
+    margin-right: 10px;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+    border-left: 3px solid #007bff;
+    padding-left: 20px;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #343a40;
+    color: white;
+}
