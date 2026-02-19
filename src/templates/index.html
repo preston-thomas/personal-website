@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <!-- Hero Section -->
+    <div class="row hero-section">
+        <div class="col-md-8">
+            <h1>Preston Thomas</h1>
+            <p class="lead">Data Engineer</p>
+            <p>Passionate about leveraging data to drive insights and create impactful solutions. Experienced in building scalable data pipelines and reporting workflows.</p>
+            <div class="d-flex justify-content-center">
+                <a href="https://github.com/preston-thomas" class="btn btn-dark me-2">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub" width="24" height="24">
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/prestonthomas6" class="btn btn-primary">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="LinkedIn" width="24" height="24">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="{{ url_for('static', filename='headshot.jpeg') }}" alt="Preston Thomas" class="img-fluid rounded">
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="row about-section">
+        <div class="col">
+            <h2>About Me</h2>
+            <p>As a Data Engineer Intern at Mutually Human, I contribute to developing scalable ETL pipelines for over 20 clients across various industries using Azure Data Factory and Databricks while supporting production reporting workflows with SQL, Python/PySpark, and Java.</p>
+            <p>Currently pursuing a Bachelor of Science in Mathematics and Computer Science at Grand Valley State University, I focus on honing technical and analytical skills. My academic background, combined with practical experience, drives my interest in leveraging data-driven solutions.</p>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="row skills-section">
+        <div class="col">
+            <h2>Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Languages</h5>
+                    <ul>
+                        <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/python.svg" alt="Python" width="24" height="24">Python</li>
+                        <li><img src="https://cdn.simpleicons.org/mysql/black" alt="SQL" width="24" height="24">SQL</li>
+                        <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/oracle.svg" alt="Java" width="24" height="24">Java</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Databases</h5>
+                    <ul>
+                        <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/postgresql.svg" alt="PostgreSQL" width="24" height="24">PostgreSQL</li>
+                        <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftsqlserver.svg" alt="Microsoft SQL Server" width="24" height="24">Microsoft SQL Server</li>
+                        <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/sqlite.svg" alt="SQLite" width="24" height="24">SQLite</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Frameworks & Tools</h5>
+                    <ul>
+                        <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/apachespark.svg" alt="PySpark" width="24" height="24">PySpark</li>
+                        <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/pandas.svg" alt="Pandas" width="24" height="24">Pandas</li>
+                        <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/databricks.svg" alt="Databricks" width="24" height="24">Databricks</li>
+                        <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoft.svg" alt="SSIS, SSRS, Power BI" width="24" height="24">SSIS, SSRS, Power BI</li>
+                        <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoft.svg" alt="Microsoft Fabric" width="24" height="24">Microsoft Fabric</li>
+                        <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/azuredataexplorer.svg" alt="Azure Data Factory" width="24" height="24">Azure Data Factory</li>
+                        <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/django.svg" alt="Django" width="24" height="24">Django</li>
+                        <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub" width="24" height="24">GitHub</li>
+                        <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/azuredevops.svg" alt="Azure DevOps" width="24" height="24">Azure DevOps</li>
+                        <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/docker.svg" alt="Docker" width="24" height="24">Docker</li>
+                        <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/terraform.svg" alt="Terraform" width="24" height="24">Terraform</li>
+                        <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/jira.svg" alt="Jira" width="24" height="24">Jira</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="row experience-section">
+        <div class="col">
+            <h2>Technical Work Experience</h2>
+            <div class="experience-item">
+                <h5>Data Engineer Intern</h5>
+                <p><strong>Mutually Human, Grand Rapids, MI</strong> | July 2024 - Present</p>
+                <ul>
+                    <li>Engineered a multithreaded Java service orchestrated via SSIS to concurrently ingest 8 tables across multiple source systems, reducing runtime by 92% (over 3 hours to 15 minutes), while enforcing 5-day windowing logic to load 50,000+ records nightly.</li>
+                    <li>Owned development of an end-to-end ETL pipeline for a $20B national retailer using Azure Data Factory and Databricks, handling chained API dependencies, inconsistent response schemas, and 30-day retention constraints. Implemented all cleansing and transformation logic in PySpark, producing Medallion-layered datasets and Star Schemas for downstream analytics.</li>
+                    <li>Serve as the technical lead for evaluating and implementing out-of-the-box LLM solutions alongside data engineering pipelines, validating NLP models against enterprise datasets to enable context-aware analytics.</li>
+                    <li>Improve data reliability and support reporting workflows for 20+ clients by developing and maintaining efficient ETL pipelines using SQL, Python, and PySpark.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h5>Information Technology Intern</h5>
+                <p><strong>Morrison Industries, Grand Rapids, MI</strong> | January 2024 - July 2024</p>
+                <ul>
+                    <li>Architected a SQL-based reconciliation tool to integrate asset inventory with carrier usage logs, identifying 97 retired devices and eliminating $45,000+ in annual overhead.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Certifications Section -->
+    <div class="row certifications-section">
+        <div class="col">
+            <h2>Certifications</h2>
+            <p>Microsoft Certified: Fabric Data Engineer Associate (DP-700)</p>
+            <p>Databricks Academy Accreditation - AI Agents Fundamentals</p>
+            <p>Databricks Certified Data Engineer Associate (coming soon!)</p>
+        </div>
+    </div>
+
+    <!-- Passions Section -->
+    <div class="row passions-section">
+        <div class="col">
+            <h2>Passions</h2>
+            <p>In my free time, I am the biggest Detroit sports fan out there and love fantasy football and the NFL. I've built several side project around my love of the game of football.</p>
+            <p>I'm also a big time gamer. I just got my first PC and I've been loving it so far. I was ranked in the world in Madden and Overwatch once upon a time!</p>
+            <p>I also love spending time at the gym, with my family and friends, and outdoors, but only when the Michigan weather allows it!</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
