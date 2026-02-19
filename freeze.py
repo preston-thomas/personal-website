@@ -4,11 +4,12 @@ from flask_frozen import Freezer
 from src import create_app
 
 app = create_app()
+app.config['FREEZER_DESTINATION'] = 'docs'
 freezer = Freezer(app)
 
 # Clean up the build directory before freezing
-if os.path.exists('src/build'):
-    shutil.rmtree('src/build')
+if os.path.exists('docs'):
+    shutil.rmtree('docs')
 
 
 if __name__ == '__main__':

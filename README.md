@@ -8,4 +8,4 @@ To generate a static version of the site for deployment, run the following comma
 python3 freeze.py
 ```
 
-The static files will be generated in the `src/build` directory.
+The static files will be generated in the `docs` directory.
