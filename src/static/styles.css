@@ -4,6 +4,9 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f8f9fa;
     color: #333;
+    margin: 0; /* Reset default body margin */
+    padding: 0; /* Reset default body padding */
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -12,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-section {
-    padding: 100px 0;
+    padding: 50px 0;
     text-align: center;
     background: linear-gradient(45deg, #007bff, #0056b3);
     color: white;
@@ -30,10 +33,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-section, .passions-section, .skills-section, .experience-section, .certifications-section {
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
-.img-fluid.rounded-circle {
+.img-fluid {
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -42,13 +45,25 @@ h1, h2, h3, h4, h5, h6 {
     transition: transform 0.3s ease;
 }
 
-.img-fluid.rounded-circle:hover {
+.img-fluid:hover {
     transform: scale(1.05);
 }
 
-.navbar {
+.navbar-custom {
+    background: linear-gradient(45deg, #007bff, #0056b3);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .nav-link:hover {
+    color: #f8f9fa;
 }
 
 .btn-dark img, .btn-primary img {
