@@ -5,7 +5,7 @@
 To generate a static version of the site for deployment, run the following command:
 
 ```bash
-python3 freeze.py
+python3 -m src.freeze
 ```
 
 The static files will be generated in the `docs` directory.
