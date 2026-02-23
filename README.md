@@ -1,4 +1,4 @@
-# personal-website
+# Preston's Personal Website
 
 ## Freezing the Site
 
